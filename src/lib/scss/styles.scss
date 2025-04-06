@@ -1,0 +1,38 @@
+@use "fonts.scss" as *;
+@use "null.scss" as *;
+
+html {
+	scrollbar-color: #ff6500 #f5f5f5;
+	// @include adaptiveValue("font-size", 20, 16, 2048, 1920, 1);
+}
+
+::-webkit-scrollbar {
+	width: rem(8); // Ширина скроллбара
+	height: rem(8); // Высота для горизонтального скролла
+}
+
+::-webkit-scrollbar-track {
+	background: #f5f5f5; // Цвет дорожки
+	border-radius: rem(8); // Радиус дорожки
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ff6500; // Цвет ползунка
+	border-radius: rem(8); // Радиус ползунка
+	border: rem(1) solid #f5f5f5; // Обрамление для ползунка
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ff7000; // Более насыщенный цвет при наведении
+}
+
+::-webkit-scrollbar-corner {
+	background: #f5f5f5; // Цвет углового блока для многоосевых скроллов
+}
+
+body {
+	background-color: #f5f5f5;
+	font-size: rem(16);
+	font-family: "Roboto", sans-serif;
+	color: #3f3f3f;
+}
